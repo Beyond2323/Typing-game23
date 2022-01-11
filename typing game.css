@@ -1,0 +1,216 @@
+body {
+    background: url("the_turn_by_rbatinic_de4evk3-pre.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90vw;
+    min-height: 90vh;
+
+}
+
+.container {
+    width: 700px;
+    height: 400px;
+    background:rgba(255,255,255,0.5);
+    border-radius:3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    opacity:0;
+    position: absolute;
+}
+
+.first {
+    width: 90%;
+    height: 90%;
+    border: 2px solid;
+    border-radius: 2%;
+    border-color: rgba(0, 0, 0, 0.3);
+    position:relative;
+}
+
+
+.split {
+    font-size: 25px;
+    font-family: -webkit-pictograph;
+    padding:0px 0px 0px 20px;
+    letter-spacing: 1px;
+    width: 94%;
+    height:69%;
+    overflow-y:auto;
+    text-align: start;
+}
+.split::-webkit-scrollbar {
+   width:0;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.line {
+    background-color: rgba(0, 0, 0, 0.3);
+    height:2px;
+    width:100%;
+}
+
+.gg {
+    display:flex;
+    font-size: 19px;
+    font-family: -webkit-pictograph ;
+    border-right: 2px solid black;
+    padding: 0px 15px;
+}
+
+
+.ff {
+    margin-left:10px;
+    
+}
+
+.correct {
+  color: #4E9F3D
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.active {
+    position:relative;
+}
+
+.active::before {
+    content:"";
+    position:absolute;
+    bottom:0;
+    border-bottom:3px solid;
+    border-color:#490bbd;
+    width:100%;
+    height:3px;
+    opacity: 0;
+    animation: flash 1s ease-in-out infinite;
+}
+
+@keyframes flash {
+  50%{
+    opacity: 1;
+  }  
+}
+
+.bot {
+    background-image: linear-gradient(#f570c2, #ef5a6f);
+    cursor: pointer;
+}
+
+
+
+.secondcontainer {
+    background:rgba(255, 255, 255, 1);
+    width: 450px;
+    height:600px;
+    position:absolute;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out 1s;
+}
+
+.animation {
+    transform:scale(1)
+}
+
+.title {
+    background: rgba(32, 31, 31, 0.9);
+    color: white;
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    font-size: 25px;
+    font-family: -webkit-pictograph ;
+    padding-top: 40px;
+}
+
+.word {
+    padding-left:10px;
+    display: flex;
+}
+
+.refrence1 {
+    font-size: 20px;
+    color: #6e2de2;
+}
+
+.main {
+    background-image: linear-gradient(rgb(10 160 248), rgb(166 241 166));
+    height: 74%;
+}
+
+.child {
+    
+    height: 60%;
+}
+
+.score {
+    font-size: 230px;
+    margin-left: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    display: inline;
+}
+
+.score2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.ggs {
+    font-size: 19px;
+    font-family: -webkit-pictograph ;
+    font-weight: bold;
+}
+
+.dd {
+    margin-left: 100px;
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.ee {
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+ 
+.toy {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background: url("the_turn_bys_rbatinic_de4evk3-pre.png");
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size: cover;
+    }
+    
+    .container {
+        width: 100%;
+        height:600px;
+    }
+  }
